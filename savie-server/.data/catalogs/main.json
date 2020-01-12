@@ -1,0 +1,5 @@
+[
+   {"id": 1, "name": "HBO", "price": 1, "image": "hbo.png", "description": "Loerm lipsum description"},
+   {"id": 2, "name": "PowerCo", "price": 1, "image": "messenger.png", "description": "Loerm lipsum description"},
+   {"id": 3, "name": "Uber", "price": 1, "image": "uber.png", "description": "Loerm lipsum description"}
+ ]

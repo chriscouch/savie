@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Savie</title>
+    <meta name="description" content="Nexus cord cutter app" />
+    <!-- link rel="stylesheet" type="text/css" href="/assets/styles/bootstrap.css" /-->
+    <link rel="stylesheet" type="text/css" href="/assets/styles/app.css" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/assets/styles/materialize.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" charset="UTF-8" src="/assets/scripts/httpClient.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/assets/scripts/auth.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/assets/scripts/formProcessor.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/assets/scripts/shoppingCart.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/assets/scripts/app.js"></script> 
+</head>
+
+<body class="{body.class}">
+    <nav class="nav-wrapper grey">
+        <div >
+                <a href="#" class="brand-logo">Savie</a>
+                <ul class="right">
+                        <li class="loggedOut" id="sign-in-button">
+                                <a href="#signin-modal" class="waves-effect waves-light btn red modal-trigger">Sign In</a>
+                            
+                        </li>
+                        <li class="loggedIn">
+                            <a href="/catalog/list">Services</a>
+                        </li>
+                        <li class="loggedIn">
+                            <a href="/user/cart/read">Cart<span class="new badge red" id="shoppingCartCounter">0</span></a>
+                        </li>
+                        <li class="loggedIn">
+                            <a href="/user/account/edit">Profile</a>
+                        </li>
+                        <li class="loggedIn">
+                            <a href="#" class="waves-effect waves-light btn red" id="logoutButton">Logout</a>
+                        </li>
+                    </ul>
+
+        </div>
+
+    </nav>
+ <!--   <div class="row grey darken-4" id="mainnav">
+        <div class="col s5"></div>
+        <div class="col s2 center">
+            <a class="white-text" href="/" style="font-size: 2rem; font-weight:300;">Savie</a>
+        </div>
+        <div class="col s3"></div>
+        <div class="col s2 center">
+            <a href="#signin-modal" class="waves-effect waves-light btn red modal-trigger">Sign In</a>
+        </div>
+    </div>
+-->
+        
+
+        <div>
+            {{pageContent}}
+        </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="/assets/scripts/materialize.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+    "plugins": [],
+    "recurseDepth": 10,
+    "source": {
+        "include": ["./src", "README.md"],
+        "exclude": ["./src/assets/styles/"],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/\\\\)_"
+    },
+    "sourceType": "module",
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc"]
+    },
+    "templates": {
+        "referenceTitle": "Nexus App",
+        "cleverLinks": true,
+        "monospaceLinks": false,
+        "collapse": true
+    },
+    "opts": {
+        "destination": "./doc/out/",
+        "recurse": true,
+        "template": "./doc/template/"
+    }
+}

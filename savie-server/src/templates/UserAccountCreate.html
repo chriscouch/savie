@@ -1,0 +1,53 @@
+<!--THIS FILE IS NOT BEING SERVED. THIS HAS BEEN INCORPORATED IN THE INDEX AS A MODAL-->
+<form id="userAccountCreate" action="/api/users" method="POST">
+    <div class="formError"></div>
+    <div class="formSuccess"></div>
+    <div class="row">
+        <div class="col s12">
+            <h3>Register</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">person</i>
+            <input name="name" id="name" type="text" class="validate" required>
+            <label for="name">Name</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input name="email" id="email" type="email" class="validate" required>
+            <label for="email">Email</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <input class="validate" name="password" id="password" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+            <label for="password">Password</label>
+            <span class="helper-text" data-error="Password must contain at least 6 characters, 
+            including UPPER/lowercase and numbers." data-success="Ok"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <input class="validate" name="password2" id="password2" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+            <label for="password2">Confirm password</label>
+            <span class="helper-text" data-error="Passwords must match." data-success="Ok"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <button type="submit" class="btn waves-effect waves-light col s12 {global.btnColor}">Register Now</button>
+        </div>
+        <div class="col s12">
+            <p class="center-align">Already have an account? <a id="modal-form-link" class="modal-trigger" href="#signin-modal">Sign In</a></p>
+        </div>
+    </div>
+</form>
+
+
+<!-- Load page specific JavaScript -->
+<script type="text/javascript" charset="UTF-8" src="/assets/scripts/userAccountCreate.js"></script>
